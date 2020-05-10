@@ -1,6 +1,6 @@
 from Bio import Entrez
 
-Entrez.email = "reneefonseca@mail.usf.edu"
+Entrez.email = "example@mail.usf.edu"
 accession = raw_input("Please enter an NCBI GenBank accession number: ") #test with EU490707, AY381075, etc. 
 handle = Entrez.esearch(db = "nucleotide", term = accession, retmax = 10, idtype = "acc", usehistory = "y")
 
